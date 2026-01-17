@@ -11,6 +11,8 @@ spring:
       acks: all
       # Retry în caz de eroare
       retries: 3
+      properties:
+        spring.json.add.type.headers: false
 
     # Configurare Consumer
     consumer:

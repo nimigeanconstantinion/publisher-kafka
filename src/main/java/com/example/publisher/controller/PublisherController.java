@@ -32,6 +32,7 @@ public class PublisherController {
                 .idIntern(request.idIntern)
                 .nr_zile(request.nr_zile)
                 .mapStocOptimStatus(request.mapStocOptimStatus)
+                .mapStocOptimAction(request.mapStocOptimAction)
                 .build();
 
         publisherService.sendProduct(product);
@@ -48,6 +49,7 @@ public class PublisherController {
             int id_furn,
             String idIntern,
             MapStocOptim.MapStocOptimStatus mapStocOptimStatus,
+            MapStocOptim.MapStocOptimAction mapStocOptimAction,
             int nr_zile
     ) {}
 

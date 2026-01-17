@@ -32,6 +32,7 @@ public class MapStocOptim implements Serializable {
     private MapStocOptimStatus mapStocOptimStatus;
 
 
+    private MapStocOptimAction mapStocOptimAction;
 
 
     @Override
@@ -51,4 +52,9 @@ public class MapStocOptim implements Serializable {
     public enum MapStocOptimStatus {
         PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED
     }
+    public enum MapStocOptimAction {
+        CREATE,UPDATE,DELETE
+    }
+
+
 }
